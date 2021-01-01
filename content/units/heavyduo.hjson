@@ -1,0 +1,33 @@
+type: mech
+speed: 0.35
+health: 400
+armor: 5
+hitSize: 6
+weapons: [ 
+    { 
+        name: none
+        reload: 60
+        x: 0
+        y: 0
+        top: false 
+        bullet: { 
+            type: BasicBulletType 
+            damage: 80
+            speed: 4.2 
+            width: 12 
+            height: 14 
+            frontColor: f8ad42
+            backColor: f68021
+            lifetime: 60 
+            sprite: bullet
+        } 
+    }
+]
+
+research: { 
+    parent: duofactory 
+    requirements: 
+    [ 
+        {item: copper, amount: 200},
+    ]
+}
